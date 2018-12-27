@@ -18,6 +18,7 @@ public:
 	Win32Window();
 	~Win32Window();
 
+	void run();
 	virtual void init();
 	virtual void render();
 };

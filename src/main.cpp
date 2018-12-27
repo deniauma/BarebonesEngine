@@ -1,8 +1,9 @@
-#include "Game.h"
+#include "BBwindow.h"
 
 int main()
 {
-	Game();
+	BBwindow game = BBwindow();
+	game.run();
 
 	return 0;
 }

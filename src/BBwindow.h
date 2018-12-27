@@ -1,11 +1,12 @@
 #pragma once
 #include "Win32Window.h"
 
-class Game
+class BBwindow :
+	public Win32Window
 {
 public:
-	Game();
-	~Game();
+	BBwindow();
+	~BBwindow();
 
 	void init();
 	void render();

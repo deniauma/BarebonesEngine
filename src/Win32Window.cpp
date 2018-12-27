@@ -136,16 +136,21 @@ void Win32Window::destroyGlcontext()
 
 Win32Window::Win32Window()
 {
-	this->createWindow();
-	this->createGLcontext();
-	this->init();
-	this->gameLoop();
-	this->destroyGlcontext();
+	
 }
 
 
 Win32Window::~Win32Window()
 {
+}
+
+void Win32Window::run()
+{
+	this->createWindow();
+	this->createGLcontext();
+	this->init();
+	this->gameLoop();
+	this->destroyGlcontext();
 }
 
 void Win32Window::init()
